@@ -4,7 +4,7 @@ import { BiUser } from "react-icons/bi";
 
 function NavBar() {
   return (
-    <Container maxW={1400}>
+    <Container maxW={1200}>
       <Flex
         as="nav"
         align="center"
