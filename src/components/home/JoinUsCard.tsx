@@ -2,7 +2,7 @@ import { Box, Button, Container, Heading, Text } from "@chakra-ui/react";
 
 const Card = () => {
   return (
-    <Container maxW={1300}>
+    <Container maxW={1300} padding={"100px 25px 150px 25px"}>
       <Box
         alignContent="center"
         width={"100%"}
@@ -14,12 +14,13 @@ const Card = () => {
         display="flex"
         alignItems="center"
       >
-        <Box flex="1" pr={4} bg="white">
+        <Box flex="1" pr={4} bg="transparent">
           <Heading
             as="h2"
             size="lg"
             mb={2}
-            bg="white"
+            bg="transparent"
+            color={"#000"}
             fontWeight={600}
             fontSize={50}
           >
@@ -34,12 +35,13 @@ const Card = () => {
         <Button
           p={"12px 40px 12px 40px"}
           fontSize={18}
-          fontWeight={400}
+          fontWeight={600}
           background={"#DDFF55"}
           size={"md"}
           rounded={"full"}
+          color={"#000"}
         >
-          Join us now
+          Join Us Now
         </Button>
       </Box>
     </Container>
