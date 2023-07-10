@@ -22,7 +22,7 @@ function OurHeritage() {
             color="white"
           >
             We are the
-            <br /> Architects of <b>tomorrow</b>
+            <br /> Architects of <b className="gradient">tomorrow</b>
           </Text>
         </Box>
 
