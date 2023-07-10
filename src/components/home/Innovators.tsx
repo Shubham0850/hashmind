@@ -50,8 +50,8 @@ function NurturingInnovators() {
       <Box bg="transparent">
         <Heading
           textAlign="center"
-          mb={"110px"}
-          fontSize={"50px"}
+          mb={{base: "55px", md: "110px"}}
+          fontSize={{base: "27px", md: "50px"}}
           fontWeight={"600"}
           textColor="white"
         >
@@ -73,7 +73,7 @@ function NurturingInnovators() {
                 "Revolutionising Web3 Consumer Experiences with AI at the Core with Expertise"
               }
             />
-            <Box mt="120px" />
+            <Box mt={{ base: "50px", md: "120px" }} />
             <Card
               imgSrc={"/advice.png"}
               title={"Advice"}
@@ -83,7 +83,7 @@ function NurturingInnovators() {
             />
           </Box>
 
-          <Box pt="150px">
+          <Box pt={{ base: "0px", md: "150px" }}>
             <Card
               imgSrc={"/build.png"}
               title={"Build"}
@@ -91,7 +91,7 @@ function NurturingInnovators() {
                 "Empowering Projects, Unleashing Web3  Consumer Applications with Our Expertise and Ingenuity"
               }
             />
-            <Box mt="120px" />
+            <Box mt={{ base: "50px", md: "120px" }} />
             <Card
               imgSrc={"/alliance.png"}
               title={"Alliance"}
@@ -101,7 +101,7 @@ function NurturingInnovators() {
             />
           </Box>
 
-          <Box pt="300px">
+          <Box pt={{ base: "0px", md: "300px" }}>
             <Card
               imgSrc={"/growth.png"}
               title={"Growth"}
@@ -109,7 +109,7 @@ function NurturingInnovators() {
                 "We bring proven strategies for early stage companies to get traction and branding"
               }
             />
-            <Box mt="120px" />
+            <Box mt={{ base: "50px", md: "120px" }} />
             <Card
               imgSrc={"/fund.png"}
               title={"Fund"}

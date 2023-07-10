@@ -1,17 +1,22 @@
-import { Box, Container, Flex, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Text, Grid } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 
 function OurHeritage() {
   return (
-    <Container maxW={1300}>
+    <Container maxW={1300} padding={"50px 25px"}>
       <Box>
-        <Box mb={"60px"}>
-          <Text fontSize={"24px"} fontWeight={400} mb={"12px"} color={"#df5"}>
+        <Box mb={{ base: "30px", md: "60px" }}>
+          <Text
+            fontSize={{ base: "20px", md: "24px" }}
+            fontWeight={400}
+            mb={{ base: "8px", md: "12px" }}
+            color={"#df5"}
+          >
             OUR HERITAGE
           </Text>
           <Text
-            fontSize={"60px"}
+            fontSize={{ base: "33px", md: "60px" }}
             fontWeight={600}
             lineHeight={"normal"}
             color="white"
@@ -21,16 +26,23 @@ function OurHeritage() {
           </Text>
         </Box>
 
-        <Flex flexDirection="column" bg="transparent" p={4}>
-          <Flex justifyContent="space-between" alignItems="center" mb={4}>
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          bg="transparent"
+          p={"0px 50px"}
+        >
+          <Grid
+            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
+            gap={4}
+          >
             <Flex
-              width="25%"
-              borderRight="1px solid #df5"
+              borderRight={{ base: "none", md: "1px solid #df5" }}
+              borderBottom={{ base: "1px solid #df5", md: "none" }}
               pr={4}
-              justifyContent={"center"}
-              alignItems={"center"}
+              justifyContent="center"
+              alignItems="center"
             >
-              <Box py="50px">
+              <Box py={{ base: "20px", md: "50px" }}>
                 <Image
                   width={60}
                   height={60}
@@ -38,7 +50,7 @@ function OurHeritage() {
                   alt="thumb icon"
                 />
                 <Text
-                  mt={"22px"}
+                  mt={{ base: "12px", md: "22px" }}
                   fontSize={"24px"}
                   fontWeight={600}
                   color="white"
@@ -50,13 +62,13 @@ function OurHeritage() {
             </Flex>
 
             <Flex
-              width="25%"
-              borderRight="1px solid #df5"
+              borderRight={{ base: "none", md: "1px solid #df5" }}
+              borderBottom={{ base: "1px solid #df5", md: "none" }}
               pr={4}
-              justifyContent={"center"}
-              alignItems={"center"}
+              justifyContent="center"
+              alignItems="center"
             >
-              <Box py="50px">
+              <Box py={{ base: "20px", md: "50px" }}>
                 <Image
                   width={60}
                   height={60}
@@ -64,7 +76,7 @@ function OurHeritage() {
                   alt="Idea icon"
                 />
                 <Text
-                  mt={"22px"}
+                  mt={{ base: "12px", md: "22px" }}
                   fontSize={"24px"}
                   fontWeight={600}
                   color="white"
@@ -76,13 +88,13 @@ function OurHeritage() {
             </Flex>
 
             <Flex
-              width="25%"
-              borderRight="1px solid #df5"
+              borderRight={{ base: "none", md: "1px solid #df5" }}
+              borderBottom={{ base: "1px solid #df5", md: "none" }}
               pr={4}
-              justifyContent={"center"}
-              alignItems={"center"}
+              justifyContent="center"
+              alignItems="center"
             >
-              <Box py="50px">
+              <Box py={{ base: "20px", md: "50px" }}>
                 <Image
                   width={60}
                   height={60}
@@ -90,7 +102,7 @@ function OurHeritage() {
                   alt="coding icon"
                 />
                 <Text
-                  mt={"22px"}
+                  mt={{ base: "12px", md: "22px" }}
                   fontSize={"24px"}
                   fontWeight={600}
                   color="white"
@@ -101,13 +113,8 @@ function OurHeritage() {
               </Box>
             </Flex>
 
-            <Flex
-              width="25%"
-              pr={4}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Box py="50px">
+            <Flex pr={4} justifyContent="center" alignItems="center">
+              <Box py={{ base: "20px", md: "50px" }}>
                 <Image
                   width={60}
                   height={60}
@@ -115,7 +122,7 @@ function OurHeritage() {
                   alt="globe icon"
                 />
                 <Text
-                  mt={"22px"}
+                  mt={{ base: "12px", md: "22px" }}
                   fontSize={"24px"}
                   fontWeight={600}
                   color="white"
@@ -125,7 +132,7 @@ function OurHeritage() {
                 </Text>
               </Box>
             </Flex>
-          </Flex>
+          </Grid>
         </Flex>
       </Box>
     </Container>

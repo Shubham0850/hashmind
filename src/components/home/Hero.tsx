@@ -10,40 +10,50 @@ import { BsArrowDown } from "react-icons/bs";
 
 function Hero() {
   return (
-    <Container maxW={1300} pt={"20px"} position={"relative"}>
-      <Box position={"relative"}>
-        <Image width={"100%"} src="/hero-bg.png" />
+    <Container
+      maxW={1300}
+      pt={{ base: "10px", md: "20px" }}
+      position="relative"
+    >
+      <Box position="relative">
+        <Image width="100%" src="/hero-bg.png" alt="hero background" />
 
         <Box
-          position={"absolute"}
-          bg={"transparent"}
-          top={"0"}
-          left={"0"}
-          padding={"100px 0 0 80px"}
+          position="absolute"
+          bg="transparent"
+          top={0}
+          left={0}
+          padding={{ base: "80px 0 0 20px", md: "100px 0 0 80px" }}
         >
           <Text
             fontWeight={500}
             bg="rgba(0, 0, 0, 0)"
-            style={{ fontSize: "60px", width: "626px" }}
+            fontSize={{ base: "30px", md: "60px" }}
+            width={isMobile ? "100%" : "626px"}
             color="#DDFF55"
           >
             Convergence of Web3 & AI Venture Studio
           </Text>
 
-          <Box bg="rgba(0, 0, 0, 0)" display={"flex"} py={10} zIndex={10}>
+          <Box
+            bg="rgba(0, 0, 0, 0)"
+            display="flex"
+            py={{ base: 6, md: 10 }}
+            zIndex={10}
+          >
             <Text
-              fontSize="40px"
+              fontSize={{ base: "30px", md: "40px" }}
               bg="rgba(0, 0, 0, 0)"
-              fontWeight="600"
+              fontWeight={600}
               color="white"
               p={4}
             >
               Let’s
             </Text>
             <Text
-              fontSize="60px"
+              fontSize={{ base: "40px", md: "60px" }}
               bg="rgba(0, 0, 0, 0)"
-              fontWeight="600"
+              fontWeight={600}
               color="#DDFF55"
             >
               Envision.
@@ -57,13 +67,6 @@ function Hero() {
       </Box>
 
       <IconButton
-        _hover={{
-          boxShadow: "0px 0px 12px 0px rgba(251, 251, 251, 0.75)",
-          _hover: {
-            boxShadow: "0px 0px 12px 0px rgba(251, 251, 251, 0.75)",
-          },
-          background: "white",
-        }}
         boxShadow="box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
         -webkit-box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
         -moz-box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);"
@@ -95,7 +98,3 @@ function Hero() {
 }
 
 export default Hero;
-
-{
-  /* */
-}
