@@ -101,7 +101,7 @@ function Footer() {
                 fontSize={{ base: "20px", md: "24px" }}
                 fontWeight={"600"}
                 bg={"transparent"}
-                textAlign={{ base: "center", md: "left" }}
+                textAlign="center"
                 mb={{ base: "30px", md: "30px" }}
               >
                 Subscribe to our newsletter!
@@ -146,10 +146,14 @@ function Footer() {
                 align="center"
                 bg={"transparent"}
               >
-                <Box width={"100%"} mb={{ base: "30px", md: 0 }} bg={"transparent"}>
+                <Box
+                  width={"100%"}
+                  mb={{ base: "30px", md: 0 }}
+                  bg={"transparent"}
+                >
                   <Text
                     fontSize={{ base: "20px", md: "24px" }}
-                    textAlign={{ base: "center", md: "left" }}
+                    textAlign="center"
                     bg={"transparent"}
                   >
                     Chat with founder
@@ -186,7 +190,7 @@ function Footer() {
                 <Box width={"100%"} bg={"transparent"}>
                   <Text
                     fontSize={{ base: "20px", md: "24px" }}
-                    textAlign={{ base: "center", md: "left" }}
+                    textAlign="center"
                     bg={"transparent"}
                   >
                     Follow us on

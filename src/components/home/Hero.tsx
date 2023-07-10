@@ -5,10 +5,13 @@ import {
   IconButton,
   Image,
   Text,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { BsArrowDown } from "react-icons/bs";
 
 function Hero() {
+  const isMobile = useBreakpointValue({ base: true, sm: false });
+
   return (
     <Container
       maxW={1300}

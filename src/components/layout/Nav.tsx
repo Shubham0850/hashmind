@@ -1,4 +1,12 @@
-import { Box, Container, Flex, IconButton, Link, Text, useDisclosure } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  IconButton,
+  Link,
+  Text,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { FiSearch, FiMenu } from "react-icons/fi";
 import { BiUser } from "react-icons/bi";
 
@@ -28,7 +36,15 @@ function NavBar() {
         {/* Menu Icon */}
         <Box display={{ base: "block", md: "none" }}>
           <IconButton
-            icon={<FiMenu style={{fontSize: "25px", background: "transparent"}} />}
+            icon={
+              <FiMenu
+                style={{
+                  fontSize: "25px",
+                  background: "transparent",
+                  color: "#fff",
+                }}
+              />
+            }
             aria-label="Menu"
             variant="ghost"
             rounded={"full"}
