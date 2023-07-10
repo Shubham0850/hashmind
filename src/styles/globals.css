@@ -1,8 +1,8 @@
 /* Custom font imports */
 
 @font-face {
-  font-family: "Gellix Medium";
-  src: url("/fonts/Gellix-Medium.ttf") format("truetype");
+  font-family: "Gellix";
+  src: url("/font/Gellix-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #292727;
-  font-family: "Gellix Medium", sans-serif;
+  font-family: "Gellix", sans-serif;
 }
 
 @keyframes blink {
@@ -29,4 +29,39 @@
 
 .blink {
   animation: blink 1.5s infinite;
+}
+
+/* gradient css */
+/* Colors */
+:root {
+  --page-background-color: #2f3c4f;
+  --gradient-color-1: #c53998;
+  --gradient-color-2: #ccff00;
+}
+
+/* Keyframes */
+@keyframes animationgradienttitle {
+  0% {
+    background-position: 0 1600px;
+  }
+  100% {
+    background-position: 1600px 0;
+  }
+}
+
+.gradient {
+  font-size: 60px;
+  background: -webkit-linear-gradient(
+    left,
+    var(--gradient-color-1),
+    var(--gradient-color-2),
+    var(--gradient-color-1)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 25s;
+  animation-name: animationgradienttitle;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }

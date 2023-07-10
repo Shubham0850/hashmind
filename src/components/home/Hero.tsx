@@ -57,6 +57,13 @@ function Hero() {
       </Box>
 
       <IconButton
+        _hover={{
+          boxShadow: "0px 0px 12px 0px rgba(251, 251, 251, 0.75)",
+          _hover: {
+            boxShadow: "0px 0px 12px 0px rgba(251, 251, 251, 0.75)",
+          },
+          background: "white",
+        }}
         boxShadow="box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
         -webkit-box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
         -moz-box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);"
