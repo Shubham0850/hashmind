@@ -1,6 +1,14 @@
-import { Box, Container, Flex, Heading, Spacer, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Spacer,
+  Text,
+  Image,
+} from "@chakra-ui/react";
 
-function Card({ title, description }) {
+function Card({ title, description, imgSrc }) {
   return (
     <Box
       maxW="sm"
@@ -10,16 +18,26 @@ function Card({ title, description }) {
       boxShadow={"0px 0px 40px 0px rgba(0, 0, 0, 0.25);"}
       p={"50px 50px 95px 50px"}
     >
-      <Text
-        fontSize="24px"
-        fontWeight="bold"
-        bg={"transparent"}
-        color={"#DDFF55"}
-        textAlign={"center"}
-      >
-        {title}
-      </Text>
-      <Text mt={"100px"} fontSize="22px" bg={"transparent"}>
+      <Flex align="center" mb="20px" bg={"transparent"}>
+        <Image
+          src={imgSrc}
+          alt="Image"
+          w="60px"
+          h="60px"
+          mr="10px"
+          bg={"transparent"}
+        />
+        <Text
+          fontSize="24px"
+          fontWeight="bold"
+          color={"#DDFF55"}
+          bg={"transparent"}
+          textAlign={"center"}
+        >
+          {title}
+        </Text>
+      </Flex>
+      <Text mt={"100px"} fontSize="22px" bg={"transparent"} color="white">
         {description}
       </Text>
     </Box>
@@ -35,6 +53,7 @@ function NurturingInnovators() {
           mb={"110px"}
           fontSize={"50px"}
           fontWeight={"600"}
+          textColor="white"
         >
           Nurturing{" "}
           <b style={{ color: "#DDFF55", fontWeight: "600" }}>Innovators</b>
@@ -48,6 +67,7 @@ function NurturingInnovators() {
         >
           <Box>
             <Card
+              imgSrc={"/research-driven.png"}
               title={"Research Driven"}
               description={
                 "Revolutionising Web3 Consumer Experiences with AI at the Core with Expertise"
@@ -55,6 +75,7 @@ function NurturingInnovators() {
             />
             <Box mt="120px" />
             <Card
+              imgSrc={"/advice.png"}
               title={"Advice"}
               description={
                 "Our experienced advisors offer guidance in product, GTM, community, and scale to empower our portfolio founders."
@@ -64,6 +85,7 @@ function NurturingInnovators() {
 
           <Box pt="150px">
             <Card
+              imgSrc={"/build.png"}
               title={"Build"}
               description={
                 "Empowering Projects, Unleashing Web3  Consumer Applications with Our Expertise and Ingenuity"
@@ -71,6 +93,7 @@ function NurturingInnovators() {
             />
             <Box mt="120px" />
             <Card
+              imgSrc={"/alliance.png"}
               title={"Alliance"}
               description={
                 "Forging network of Partnerships to Redefine the Web3 and AI Landscape"
@@ -80,6 +103,7 @@ function NurturingInnovators() {
 
           <Box pt="300px">
             <Card
+              imgSrc={"/growth.png"}
               title={"Growth"}
               description={
                 "We bring proven strategies for early stage companies to get traction and branding"
@@ -87,6 +111,7 @@ function NurturingInnovators() {
             />
             <Box mt="120px" />
             <Card
+              imgSrc={"/fund.png"}
               title={"Fund"}
               description={
                 "We invest in promising founders by deploying our capital and support fundraise by our partnership potential investors"

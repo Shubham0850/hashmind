@@ -57,9 +57,15 @@ function Hero() {
       </Box>
 
       <IconButton
-        ml={2}
+        boxShadow="box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);"
+        ml={1}
+        w="60px"
+        h="60px"
         icon={
           <BsArrowDown
+            className="blink"
             style={{
               background: "transparent",
               color: "black",
@@ -73,8 +79,8 @@ function Hero() {
         background={"white"}
         rounded={"full"}
         position={"absolute"}
-        bottom={"-20px"}
-        left={"calc(50% - 20px)"}
+        bottom={"-30px"}
+        left={"calc(50% - 30px)"}
         zIndex={10}
       />
     </Container>

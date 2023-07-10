@@ -1,11 +1,4 @@
-import {
-  Box,
-  Flex,
-  Button,
-  Container,
-  Text,
-  Center,
-} from "@chakra-ui/react";
+import { Box, Flex, Button, Container, Text, Center } from "@chakra-ui/react";
 import Link from "next/link";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BsMedium, BsTwitter } from "react-icons/bs";
@@ -17,6 +10,7 @@ function Footer() {
         maxW={1300}
         background={"transparent"}
         padding={"80px 25px 40px 25px"}
+        color="white"
       >
         <Box py={6} bg="transparent">
           <Flex

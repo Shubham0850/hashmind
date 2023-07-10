@@ -10,7 +10,12 @@ function OurHeritage() {
           <Text fontSize={"24px"} fontWeight={400} mb={"12px"} color={"#df5"}>
             OUR HERITAGE
           </Text>
-          <Text fontSize={"60px"} fontWeight={600} lineHeight={"normal"}>
+          <Text
+            fontSize={"60px"}
+            fontWeight={600}
+            lineHeight={"normal"}
+            color="white"
+          >
             We are the
             <br /> Architects of <b>tomorrow</b>
           </Text>
@@ -32,7 +37,12 @@ function OurHeritage() {
                   src="/thumb-icon.svg"
                   alt="thumb icon"
                 />
-                <Text mt={"22px"} fontSize={"24px"} fontWeight={600}>
+                <Text
+                  mt={"22px"}
+                  fontSize={"24px"}
+                  fontWeight={600}
+                  color="white"
+                >
                   We pioneer
                   <br /> convergence
                 </Text>
@@ -53,7 +63,12 @@ function OurHeritage() {
                   src="/idea-icon.svg"
                   alt="Idea icon"
                 />
-                <Text mt={"22px"} fontSize={"24px"} fontWeight={600}>
+                <Text
+                  mt={"22px"}
+                  fontSize={"24px"}
+                  fontWeight={600}
+                  color="white"
+                >
                   We redefine <br />
                   possibilities
                 </Text>
@@ -74,7 +89,12 @@ function OurHeritage() {
                   src="/coding-icon.svg"
                   alt="coding icon"
                 />
-                <Text mt={"22px"} fontSize={"24px"} fontWeight={600}>
+                <Text
+                  mt={"22px"}
+                  fontSize={"24px"}
+                  fontWeight={600}
+                  color="white"
+                >
                   We build
                   <br /> for Demand
                 </Text>
@@ -94,7 +114,12 @@ function OurHeritage() {
                   src="/globe-icon.svg"
                   alt="globe icon"
                 />
-                <Text mt={"22px"} fontSize={"24px"} fontWeight={600}>
+                <Text
+                  mt={"22px"}
+                  fontSize={"24px"}
+                  fontWeight={600}
+                  color="white"
+                >
                   Societal impact
                   <br /> is the goal
                 </Text>
