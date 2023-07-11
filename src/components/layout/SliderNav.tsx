@@ -2,7 +2,12 @@ import { Box, Flex, IconButton, Link, useDisclosure } from "@chakra-ui/react";
 import { FiSearch, FiMenu } from "react-icons/fi";
 import { BiUser } from "react-icons/bi";
 
-function SliderNav({ onToggle, isOpen }) {
+interface SliderNavProps {
+  onToggle: () => void;
+  isOpen: boolean;
+}
+
+function SliderNav({ onToggle, isOpen }: SliderNavProps) {
   return (
     <Flex
       h="100vh"

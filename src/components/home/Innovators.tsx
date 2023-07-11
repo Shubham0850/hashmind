@@ -8,7 +8,13 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-function Card({ title, description, imgSrc }) {
+interface CardProps {
+  title: string;
+  description: string;
+  imgSrc: string;
+}
+
+function Card({ title, description, imgSrc }: CardProps) {
   return (
     <Box
       maxW="sm"
@@ -50,8 +56,8 @@ function NurturingInnovators() {
       <Box bg="transparent">
         <Heading
           textAlign="center"
-          mb={{base: "55px", md: "110px"}}
-          fontSize={{base: "27px", md: "50px"}}
+          mb={{ base: "55px", md: "110px" }}
+          fontSize={{ base: "27px", md: "50px" }}
           fontWeight={"600"}
           textColor="white"
         >
