@@ -35,6 +35,7 @@ function Footer() {
                 fontSize={{ base: "20px", md: "24px" }}
                 fontWeight={"600"}
                 mb={{ base: "15px", md: "32px" }}
+                _hover={{color:'#DDFF55'}}
               >
                 Why HashMind ?
               </Text>
@@ -44,6 +45,7 @@ function Footer() {
                   bg="transparent"
                   mb="15px"
                   fontSize={{ base: "16px", md: "18px" }}
+                  _hover={{color:'#DDFF55'}}
                 >
                   About Us
                 </Text>
@@ -53,6 +55,7 @@ function Footer() {
                   bg="transparent"
                   mb="15px"
                   fontSize={{ base: "16px", md: "18px" }}
+                  _hover={{color:'#DDFF55'}}
                 >
                   Blog
                 </Text>
@@ -62,6 +65,7 @@ function Footer() {
                   bg="transparent"
                   mb="15px"
                   fontSize={{ base: "16px", md: "18px" }}
+                  _hover={{color:'#DDFF55'}}
                 >
                   Our Heritages
                 </Text>
@@ -71,6 +75,7 @@ function Footer() {
                   bg="transparent"
                   mb="15px"
                   fontSize={{ base: "16px", md: "18px" }}
+                  _hover={{color:'#DDFF55'}}
                 >
                   Documents
                 </Text>
@@ -80,6 +85,7 @@ function Footer() {
                   bg="transparent"
                   mb="15px"
                   fontSize={{ base: "16px", md: "18px" }}
+                  _hover={{color:'#DDFF55'}}
                 >
                   Careers
                 </Text>
@@ -89,6 +95,7 @@ function Footer() {
                   bg="transparent"
                   mb="15px"
                   fontSize={{ base: "16px", md: "18px" }}
+                  _hover={{color:'#DDFF55'}} 
                 >
                   Privacy Policy
                 </Text>
@@ -168,6 +175,7 @@ function Footer() {
                     >
                       <Link href={"#"}>
                         <BsTwitter
+                          className="twittericon"
                           style={{
                             background: "transparent",
                             fontSize: "35px",
@@ -177,6 +185,7 @@ function Footer() {
 
                       <Link href={"#"}>
                         <BiLogoLinkedin
+                         className="linkedinicon"
                           style={{
                             background: "transparent",
                             fontSize: "35px",
@@ -205,6 +214,7 @@ function Footer() {
                     >
                       <Link href={"#"}>
                         <BsTwitter
+                          className="twittericon"
                           style={{
                             background: "transparent",
                             fontSize: "35px",
@@ -214,6 +224,7 @@ function Footer() {
 
                       <Link href={"#"}>
                         <BiLogoLinkedin
+                        className="linkedinicon"
                           style={{
                             background: "transparent",
                             fontSize: "35px",
@@ -223,6 +234,7 @@ function Footer() {
 
                       <Link href={"#"}>
                         <BsMedium
+                        className="mediumicon"
                           style={{
                             background: "transparent",
                             fontSize: "35px",
