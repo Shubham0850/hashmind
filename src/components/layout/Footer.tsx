@@ -55,10 +55,7 @@ function Footer() {
                 maxW="sm"
                 p={4}
                 bg="transparent"
-                fontSize={{ base: "20px", md: "24px" }}
-                fontWeight={"600"}
-                mb={{ base: "15px", md: "32px" }}
-                _hover={{color:'#DDFF55'}}
+                mb={{ base: "30px", md: 0 }}
               >
                 {/* Hide on mobile */}
                 <Text
@@ -83,7 +80,7 @@ function Footer() {
                         _focus={{ outline: "none" }}
                         _hover={{ bg: "transparent" }}
                         _expanded={{ bg: "transparent" }}
-                        bg="#080808"
+                        bg="black"
                         mb="15px"
                       >
                         <Box flex="1" textAlign="left">
@@ -92,17 +89,17 @@ function Footer() {
                             fontSize={{ base: "20px", md: "24px" }}
                             fontWeight={"600"}
                             mb="15px"
-                            mr="7rem"
+                            ml="2rem"
+                            mr="2rem"
                             color="white"
                           >
-                            Why HashMind?
+                            Why HashMind
                           </Text>
                         </Box>
-
                         <Box as={FaPlus} fontSize="12px" color="white" />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4} bg="#080808">
+                    <AccordionPanel pb={4} bg="black">
                       <Link href={"#"}>
                         <Text
                           bg="transparent"
@@ -277,7 +274,7 @@ function Footer() {
                     fontWeight={400}
                     background="#DDFF55"
                     rounded="full"
-                    color="#080808"
+                    color="#000000"
                   >
                     Subscribe
                   </Button>
@@ -299,28 +296,24 @@ function Footer() {
                       textAlign="center"
                       bg={"transparent"}
                     >
-                      <Link href={"#"}>
-                        <BsTwitter
-                          className="twittericon"
-                          style={{
-                            background: "transparent",
-                            fontSize: "35px",
-                          }}
-                        />
-                      </Link>
+                      Chat with founder
+                    </Text>
 
-                      <Link href={"#"}>
-                        <BiLogoLinkedin
-                         className="linkedinicon"
-                          style={{
-                            background: "transparent",
-                            fontSize: "35px",
-                          }}
-                        />
-                      </Link>
-                    </Flex>
-                  </Center>
-                </Box>
+                    <Center bg={"transparent"}>
+                      <Flex
+                        gap={10}
+                        mt={"36px"}
+                        bg={"transparent"}
+                        justify={{ base: "center", md: "initial" }}
+                      >
+                        <Link href={"#"}>
+                          <BsTwitter
+                            style={{
+                              background: "transparent",
+                              fontSize: "35px",
+                            }}
+                          />
+                        </Link>
 
                         <Link href={"#"}>
                           <BiLogoLinkedin
@@ -340,41 +333,33 @@ function Footer() {
                       textAlign="center"
                       bg={"transparent"}
                     >
-                      <Link href={"#"}>
-                        <BsTwitter
-                          className="twittericon"
-                          style={{
-                            background: "transparent",
-                            fontSize: "35px",
-                          }}
-                        />
-                      </Link>
+                      Follow us on
+                    </Text>
 
-                      <Link href={"#"}>
-                        <BiLogoLinkedin
-                        className="linkedinicon"
-                          style={{
-                            background: "transparent",
-                            fontSize: "35px",
-                          }}
-                        />
-                      </Link>
+                    <Center bg={"transparent"}>
+                      <Flex
+                        gap={10}
+                        mt={"36px"}
+                        bg={"transparent"}
+                        justify={{ base: "center", md: "initial" }}
+                      >
+                        <Link href={"#"}>
+                          <BsTwitter
+                            style={{
+                              background: "transparent",
+                              fontSize: "35px",
+                            }}
+                          />
+                        </Link>
 
-                      <Link href={"#"}>
-                        <BsMedium
-                        className="mediumicon"
-                          style={{
-                            background: "transparent",
-                            fontSize: "35px",
-                          }}
-                        />
-                      </Link>
-                    </Flex>
-                  </Center>
-                </Box>
-              </Flex>
-            </Box>
-          </Flex>
+                        <Link href={"#"}>
+                          <BiLogoLinkedin
+                            style={{
+                              background: "transparent",
+                              fontSize: "35px",
+                            }}
+                          />
+                        </Link>
 
                         <Link href={"#"}>
                           <BsMedium
