@@ -55,7 +55,10 @@ function Footer() {
                 maxW="sm"
                 p={4}
                 bg="transparent"
-                mb={{ base: "30px", md: 0 }}
+                fontSize={{ base: "20px", md: "24px" }}
+                fontWeight={"600"}
+                mb={{ base: "15px", md: "32px" }}
+                _hover={{color:'#DDFF55'}}
               >
                 {/* Hide on mobile */}
                 <Text
@@ -296,24 +299,28 @@ function Footer() {
                       textAlign="center"
                       bg={"transparent"}
                     >
-                      Chat with founder
-                    </Text>
+                      <Link href={"#"}>
+                        <BsTwitter
+                          className="twittericon"
+                          style={{
+                            background: "transparent",
+                            fontSize: "35px",
+                          }}
+                        />
+                      </Link>
 
-                    <Center bg={"transparent"}>
-                      <Flex
-                        gap={10}
-                        mt={"36px"}
-                        bg={"transparent"}
-                        justify={{ base: "center", md: "initial" }}
-                      >
-                        <Link href={"#"}>
-                          <BsTwitter
-                            style={{
-                              background: "transparent",
-                              fontSize: "35px",
-                            }}
-                          />
-                        </Link>
+                      <Link href={"#"}>
+                        <BiLogoLinkedin
+                         className="linkedinicon"
+                          style={{
+                            background: "transparent",
+                            fontSize: "35px",
+                          }}
+                        />
+                      </Link>
+                    </Flex>
+                  </Center>
+                </Box>
 
                         <Link href={"#"}>
                           <BiLogoLinkedin
@@ -333,33 +340,41 @@ function Footer() {
                       textAlign="center"
                       bg={"transparent"}
                     >
-                      Follow us on
-                    </Text>
+                      <Link href={"#"}>
+                        <BsTwitter
+                          className="twittericon"
+                          style={{
+                            background: "transparent",
+                            fontSize: "35px",
+                          }}
+                        />
+                      </Link>
 
-                    <Center bg={"transparent"}>
-                      <Flex
-                        gap={10}
-                        mt={"36px"}
-                        bg={"transparent"}
-                        justify={{ base: "center", md: "initial" }}
-                      >
-                        <Link href={"#"}>
-                          <BsTwitter
-                            style={{
-                              background: "transparent",
-                              fontSize: "35px",
-                            }}
-                          />
-                        </Link>
+                      <Link href={"#"}>
+                        <BiLogoLinkedin
+                        className="linkedinicon"
+                          style={{
+                            background: "transparent",
+                            fontSize: "35px",
+                          }}
+                        />
+                      </Link>
 
-                        <Link href={"#"}>
-                          <BiLogoLinkedin
-                            style={{
-                              background: "transparent",
-                              fontSize: "35px",
-                            }}
-                          />
-                        </Link>
+                      <Link href={"#"}>
+                        <BsMedium
+                        className="mediumicon"
+                          style={{
+                            background: "transparent",
+                            fontSize: "35px",
+                          }}
+                        />
+                      </Link>
+                    </Flex>
+                  </Center>
+                </Box>
+              </Flex>
+            </Box>
+          </Flex>
 
                         <Link href={"#"}>
                           <BsMedium

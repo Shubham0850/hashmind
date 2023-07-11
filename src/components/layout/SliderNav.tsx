@@ -32,6 +32,7 @@ function SliderNav({ onToggle, isOpen }: SliderNavProps) {
           justify="center"
           align="center"
           bg={"transparent"}
+          color={'white'}
         >
           <Link href="/" width={"100%"} bg={"transparent"}>
             <Box

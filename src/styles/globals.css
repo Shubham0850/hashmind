@@ -81,8 +81,16 @@
   }
 }
 
-/* footer-accordion css */
+/* footer hover icons */
 
-/* .footer-accordion {
-  background: transparent !important;
-} */
+.twittericon:hover {
+  color: #ddff55;
+}
+
+.linkedinicon:hover {
+  color: #ddff55;
+}
+
+.mediumicon:hover {
+  color: #ddff55;
+}
