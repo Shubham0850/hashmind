@@ -26,11 +26,7 @@ function OurHeritage() {
           </Text>
         </Box>
 
-        <Flex
-          flexDirection={{ base: "column", md: "row" }}
-          bg="transparent"
-          p={"0px 50px"}
-        >
+      
           <Grid
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             gap={4}
@@ -133,7 +129,7 @@ function OurHeritage() {
               </Box>
             </Flex>
           </Grid>
-        </Flex>
+        
       </Box>
     </Container>
   );

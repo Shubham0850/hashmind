@@ -26,7 +26,8 @@ function NavBar() {
         align="center"
         justify="space-between"
         wrap="wrap"
-        p={4}
+        py={4}
+        px={20}
         bg="transparent"
         color="white"
       >

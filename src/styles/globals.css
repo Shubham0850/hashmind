@@ -68,13 +68,16 @@
 
 /* Hero */
 
-.hero{
-  height: 85vh;
-  background-image: url("/hero-bg2.png");
-  background-size: cover;
-  border-radius: 25px;
-  overflow: hidden;
-}
-.hero-details{
-  bottom: 0;
+
+@media (max-width: 767px) {
+  .hero{
+    height: 85vh;
+    background-image: url("/hero-bg2.png");
+    background-size: cover;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .hero-details{
+    bottom: 0;
+  }
 }

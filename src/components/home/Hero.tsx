@@ -40,7 +40,7 @@ function Hero() {
             width={isMobile ? "100%" : "626px"}
             color="#DDFF55"
           >
-            Convergence of Web3 & AI Venture Studio
+            Convergence of Web3 & AI <b style={{background:'transparent',color:'white'}} >Venture Studio</b>
           </Text>
 
           <Box
@@ -68,7 +68,7 @@ function Hero() {
             </Text>
           </Box>
 
-          <Button colorScheme="yellow" size="lg">
+          <Button background="#DDFF55" _hover={{background:'white'}} size="lg">
             Build With Us
           </Button>
         </Box>
