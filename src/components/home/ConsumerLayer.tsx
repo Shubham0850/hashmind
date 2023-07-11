@@ -46,8 +46,8 @@ const Section = () => {
           >
             <b style={{ color: "#df5" }}>User adoption</b> is the catalyst for
             the flourishing, democratizing, and paradigm-shifting potential of
-            crypto and Web3. We build Web3's transformative capabilities with AI
-            to deliver desirable crypto ventures.
+            crypto and Web3. We build Web3&apos;s transformative capabilities
+            with AI to deliver desirable crypto ventures.
           </Text>
         </Box>
         <Box display="flex" justifyContent={{ base: "center", md: "flex-end" }}>
@@ -66,7 +66,7 @@ const Section = () => {
           mt={"40px"}
           lineHeight="normal"
           display={{ base: "block", md: "none" }}
-          color={'white'}
+          color={"white"}
         >
           <b style={{ color: "#df5" }}>User adoption</b> is the catalyst for the
           flourishing, democratizing, and paradigm-shifting potential of crypto
