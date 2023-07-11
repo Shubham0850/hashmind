@@ -61,16 +61,16 @@ function NavBar() {
 
         {/* Links */}
         <Flex gap={20} display={{ base: "none", md: "flex" }}>
-          <Link href="/" mr={4}>
+          <Link href="/" mr={4} _hover={{color:'#DDFF55', textDecoration: 'underline',fontWeight: "bold" }}>
             Home
           </Link>
-          <Link href="#" mr={4}>
+          <Link href="#" mr={4} _hover={{color:'#DDFF55', textDecoration: 'underline',fontWeight: "bold" }}>
             Our Thesis
           </Link>
-          <Link href="#" mr={4}>
+          <Link href="#" mr={4} _hover={{color:'#DDFF55', textDecoration: 'underline',fontWeight: "bold" }}>
             Blog
           </Link>
-          <Link href="#" mr={4}>
+          <Link href="#" mr={4} _hover={{color:'#DDFF55', textDecoration: 'underline',fontWeight: "bold" }} >
             Contact
           </Link>
 
@@ -112,6 +112,7 @@ function NavBar() {
               background={"#DDFF55"}
               rounded={"full"}
             />
+            
           </Box>
         </Flex>
       </Flex>
