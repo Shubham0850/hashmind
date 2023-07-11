@@ -12,7 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #292727;
-  font-family: "Gellix", sans-serif;
+  font-family: "Gellix Medium", sans-serif;
 }
 
 @keyframes blink {
@@ -64,4 +64,17 @@
   animation-name: animationgradienttitle;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
+}
+
+/* Hero */
+
+.hero{
+  height: 85vh;
+  background-image: url("/hero-bg2.png");
+  background-size: cover;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.hero-details{
+  bottom: 0;
 }

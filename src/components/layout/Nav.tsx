@@ -9,9 +9,15 @@ import {
 } from "@chakra-ui/react";
 import { FiSearch, FiMenu } from "react-icons/fi";
 import { BiUser } from "react-icons/bi";
+import SliderNav from "./SliderNav";
+import { useState } from "react";
 
 function NavBar() {
-  const { isOpen, onToggle } = useDisclosure();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onToggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <Container maxW={1200}>
@@ -53,7 +59,7 @@ function NavBar() {
         </Box>
 
         {/* Links */}
-        <Flex gap={20} display={{ base: isOpen ? "flex" : "none", md: "flex" }}>
+        <Flex gap={20} display={{ base: "none", md: "flex" }}>
           <Link href="/" mr={4}>
             Home
           </Link>
@@ -108,6 +114,8 @@ function NavBar() {
           </Box>
         </Flex>
       </Flex>
+
+      <SliderNav isOpen={isOpen} onToggle={onToggle} />
     </Container>
   );
 }

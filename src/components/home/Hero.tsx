@@ -18,15 +18,20 @@ function Hero() {
       pt={{ base: "10px", md: "20px" }}
       position="relative"
     >
-      <Box position="relative">
-        <Image width="100%" src="/hero-bg.png" alt="hero background" />
+      <Box position="relative" className="hero">
+        <Image
+          width="100%"
+          src="/hero-bg.png"
+          alt="hero background"
+          display={{ base: "none", md: "block" }}
+        />
 
         <Box
           position="absolute"
           bg="transparent"
-          top={0}
           left={0}
           padding={{ base: "80px 0 0 20px", md: "100px 0 0 80px" }}
+          bottom={{ base: 20, md: "none" }}
         >
           <Text
             fontWeight={500}
