@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { FiSearch, FiMenu } from "react-icons/fi";
 import { BiUser } from "react-icons/bi";
+import { AiOutlineBulb } from "react-icons/ai";
 import SliderNav from "./SliderNav";
 import { useState } from "react";
 
@@ -99,6 +100,23 @@ function NavBar() {
               ml={2}
               icon={
                 <BiUser
+                  style={{
+                    background: "transparent",
+                    color: "black",
+                    fontSize: 22,
+                  }}
+                />
+              }
+              aria-label="User Profile"
+              variant="ghost"
+              size="md"
+              background={"#DDFF55"}
+              rounded={"full"}
+            />
+            <IconButton
+              ml={2}
+              icon={
+                <AiOutlineBulb
                   style={{
                     background: "transparent",
                     color: "black",

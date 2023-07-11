@@ -68,16 +68,21 @@
 
 /* Hero */
 
-
 @media (max-width: 767px) {
-  .hero{
+  .hero {
     height: 85vh;
     background-image: url("/hero-bg2.png");
     background-size: cover;
     border-radius: 25px;
     overflow: hidden;
   }
-  .hero-details{
+  .hero-details {
     bottom: 0;
   }
 }
+
+/* footer-accordion css */
+
+/* .footer-accordion {
+  background: transparent !important;
+} */
