@@ -42,6 +42,7 @@ const Card = () => {
           rounded={"full"}
           color={"#000"}
           alignSelf={{ base: "flex-start", md: "center" }}
+          _hover={{color:'white',background:'black'}}
         >
           Join Us Now
         </Button>
