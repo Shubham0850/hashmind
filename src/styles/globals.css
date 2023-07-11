@@ -76,8 +76,23 @@
     background-size: cover;
     border-radius: 25px;
     overflow: hidden;
+    
   }
   .hero-details{
     bottom: 0;
   }
+}
+
+/* footer hover icons */
+
+.twittericon:hover{
+  color: #DDFF55;
+}
+
+.linkedinicon:hover{
+  color: #DDFF55;
+}
+
+.mediumicon:hover{
+  color: #DDFF55;
 }
