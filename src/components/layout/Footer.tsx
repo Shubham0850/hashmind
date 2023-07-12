@@ -100,7 +100,7 @@ function Footer() {
                       </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4} bg="black">
-                      <Link href={"#"}>
+                      <Link href={"#aboutUs"}>
                         <Text
                           bg="transparent"
                           mb="15px"
@@ -124,7 +124,7 @@ function Footer() {
                           Blog
                         </Text>
                       </Link>
-                      <Link href={"#"}>
+                      <Link href={"#ourHeritage"} >
                         <Text
                           bg="transparent"
                           mb="15px"
@@ -136,7 +136,7 @@ function Footer() {
                           Our Heritages
                         </Text>
                       </Link>
-                      <Link href={"#"}>
+                      <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
                         <Text
                           bg="transparent"
                           mb="15px"
@@ -178,7 +178,7 @@ function Footer() {
 
                 {/* Desktop Links */}
                 <Box display={{ base: "none", md: "block" }} bg="transparent">
-                  <Link href={"#"}>
+                  <Link href={"#aboutUs"}>
                     <Text
                       bg="transparent"
                       mb="15px"
@@ -196,7 +196,7 @@ function Footer() {
                       Blog
                     </Text>
                   </Link>
-                  <Link href={"#"}>
+                  <Link href={"#ourHeritage"}>
                     <Text
                       bg="transparent"
                       mb="15px"
@@ -205,7 +205,7 @@ function Footer() {
                       Our Heritages
                     </Text>
                   </Link>
-                  <Link href={"#"}>
+                  <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
                     <Text
                       bg="transparent"
                       mb="15px"
@@ -306,7 +306,7 @@ function Footer() {
                         bg={"transparent"}
                         justify={{ base: "center", md: "initial" }}
                       >
-                        <Link href={"#"}>
+                        <Link href={"https://twitter.com/Arjunweb3in"} target="_blank">
                           <BsTwitter
                             style={{
                               background: "transparent",
@@ -315,7 +315,7 @@ function Footer() {
                           />
                         </Link>
 
-                        <Link href={"#"}>
+                        <Link href={"https://www.linkedin.com/in/arjungmn/"} target="_blank">
                           <BiLogoLinkedin
                             style={{
                               background: "transparent",
@@ -343,7 +343,7 @@ function Footer() {
                         bg={"transparent"}
                         justify={{ base: "center", md: "initial" }}
                       >
-                        <Link href={"#"}>
+                        <Link href={"https://twitter.com/hashmindAI"} target="_blank">
                           <BsTwitter
                             style={{
                               background: "transparent",
@@ -352,7 +352,7 @@ function Footer() {
                           />
                         </Link>
 
-                        <Link href={"#"}>
+                        <Link href={"https://www.linkedin.com/company/hashmind/"} target="_blank">
                           <BiLogoLinkedin
                             style={{
                               background: "transparent",
@@ -361,7 +361,7 @@ function Footer() {
                           />
                         </Link>
 
-                        <Link href={"#"}>
+                        <Link href={"https://medium.com/@hashmindorg"} target="blank">
                           <BsMedium
                             style={{
                               background: "transparent",
