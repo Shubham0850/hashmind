@@ -34,12 +34,12 @@ function WhoWeAre() {
           <Link href="#" target="_blank" rel="noopener noreferrer">
             <Text
               fontSize={{ base: "xl", md: "2xl" }}
-              fontWeight={"bold"}
               textDecoration="underline"
               color={"#FFF"}
               display={"flex"}
               alignItems="center"
               p={5}
+              _hover={{fontWeight:'bold',color:'#DDFF55'}}
             >
               Know More
               <Icon className="blink" as={BsArrowRight} color={"#DDFF55"} m={2} />
