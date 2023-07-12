@@ -4,7 +4,7 @@ import React from "react";
 
 function OurHeritage() {
   return (
-    <Container maxW={1300} padding={"50px 25px"}>
+    <Container maxW={1300} padding={"50px 25px"} id="ourHeritage">
       <Box>
         <Box mb={{ base: "30px", md: "60px" }}>
           <Text
