@@ -8,6 +8,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { BsArrowDown } from "react-icons/bs";
+import Link from "next/link";
 
 function Hero() {
   const isMobile = useBreakpointValue({ base: true, sm: false });
@@ -73,7 +74,8 @@ function Hero() {
           </Button>
         </Box>
       </Box>
-
+      
+      <Link href='#aboutUs'>
       <IconButton
         boxShadow="box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
         -webkit-box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
@@ -101,6 +103,7 @@ function Hero() {
         left={"calc(50% - 30px)"}
         zIndex={10}
       />
+      </Link>
     </Container>
   );
 }
