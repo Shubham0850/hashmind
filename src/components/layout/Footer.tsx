@@ -124,7 +124,7 @@ function Footer() {
                           Blog
                         </Text>
                       </Link>
-                      <Link href={"#ourHeritage"} >
+                      <Link href={"#ourHeritage"}>
                         <Text
                           bg="transparent"
                           mb="15px"
@@ -136,7 +136,10 @@ function Footer() {
                           Our Heritages
                         </Text>
                       </Link>
-                      <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
+                      <Link
+                        href={"https://hashmind.gitbook.io/about/"}
+                        target="_blank"
+                      >
                         <Text
                           bg="transparent"
                           mb="15px"
@@ -205,7 +208,10 @@ function Footer() {
                       Our Heritages
                     </Text>
                   </Link>
-                  <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
+                  <Link
+                    href={"https://hashmind.gitbook.io/about/"}
+                    target="_blank"
+                  >
                     <Text
                       bg="transparent"
                       mb="15px"
@@ -253,19 +259,21 @@ function Footer() {
                   mb={{ base: "30px", md: "80px" }}
                   bg={"transparent"}
                   border="2px solid #DDFF55"
-                  p={2}
+                  p={4}
                   rounded={"10px"}
                 >
                   <Input
                     placeholder="Enter your email"
+                    font-size="16px"
+                    font-weight="400"
                     bg="transparent"
                     fontSize={{ base: "16px", md: "20px" }}
                     px="10px"
                     py="8px"
                     outline="none"
-                    border={"none"}
-                    color="white"
-                    _placeholder={{ color: "white" }}
+                    border="none"
+                    _placeholder={{ color: "#7D7D7D" }}
+                    boxShadow="none !important"
                   />
                   <Button
                     px={{ base: "20px", md: "40px" }}
@@ -306,7 +314,10 @@ function Footer() {
                         bg={"transparent"}
                         justify={{ base: "center", md: "initial" }}
                       >
-                        <Link href={"https://twitter.com/Arjunweb3in"} target="_blank">
+                        <Link
+                          href={"https://twitter.com/Arjunweb3in"}
+                          target="_blank"
+                        >
                           <BsTwitter
                             style={{
                               background: "transparent",
@@ -315,7 +326,10 @@ function Footer() {
                           />
                         </Link>
 
-                        <Link href={"https://www.linkedin.com/in/arjungmn/"} target="_blank">
+                        <Link
+                          href={"https://www.linkedin.com/in/arjungmn/"}
+                          target="_blank"
+                        >
                           <BiLogoLinkedin
                             style={{
                               background: "transparent",
@@ -343,7 +357,10 @@ function Footer() {
                         bg={"transparent"}
                         justify={{ base: "center", md: "initial" }}
                       >
-                        <Link href={"https://twitter.com/hashmindAI"} target="_blank">
+                        <Link
+                          href={"https://twitter.com/hashmindAI"}
+                          target="_blank"
+                        >
                           <BsTwitter
                             style={{
                               background: "transparent",
@@ -352,7 +369,10 @@ function Footer() {
                           />
                         </Link>
 
-                        <Link href={"https://www.linkedin.com/company/hashmind/"} target="_blank">
+                        <Link
+                          href={"https://www.linkedin.com/company/hashmind/"}
+                          target="_blank"
+                        >
                           <BiLogoLinkedin
                             style={{
                               background: "transparent",
@@ -361,7 +381,10 @@ function Footer() {
                           />
                         </Link>
 
-                        <Link href={"https://medium.com/@hashmindorg"} target="blank">
+                        <Link
+                          href={"https://medium.com/@hashmindorg"}
+                          target="blank"
+                        >
                           <BsMedium
                             style={{
                               background: "transparent",
@@ -382,7 +405,7 @@ function Footer() {
               mt={{ base: "60px", md: "90px" }}
               fontSize={"16px"}
             >
-              Copyright © 2023 H2O.ai. All rights reserved
+              Copyright © 2023 HashMind. All rights reserved
             </Text>
           </Box>
         </Container>
