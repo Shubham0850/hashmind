@@ -4,7 +4,7 @@ import { Icon } from "@chakra-ui/react";
 
 function WhoWeAre() {
   return (
-    <Container maxW={1300}>
+    <Container maxW={1300} id="aboutUs">
       <Box textAlign="center" p={{ base: 0, md: 36 }}>
         <Text
           fontSize={{ base: "40px", md: "50px" }}
