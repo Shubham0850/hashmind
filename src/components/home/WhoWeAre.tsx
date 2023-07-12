@@ -24,7 +24,7 @@ function WhoWeAre() {
         >
           We are fueling the dreams of pioneers and captivating the hearts of
           consumers. Our venture studio embarks on a transformative journey{" "}
-          <span style={{ color: "yellow" }}>
+          <span style={{ color: "#DDFF55" }}>
             {" "}
             with industry expert teams, bridging the realms of Web3 and AI,
             weaving extraordinary projects that leave a lasting impression.
@@ -42,7 +42,7 @@ function WhoWeAre() {
               p={5}
             >
               Know More
-              <Icon className="blink" as={BsArrowRight} color={"yellow"} m={2} />
+              <Icon className="blink" as={BsArrowRight} color={"#DDFF55"} m={2} />
             </Text>
           </Link>
         </VStack>
