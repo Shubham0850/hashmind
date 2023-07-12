@@ -64,6 +64,7 @@ function Footer() {
                   fontWeight={"600"}
                   mb={{ base: "15px", md: "32px" }}
                   display={{ base: "none", md: "block" }}
+                  _hover={{ color: "#DDFF55" }}
                 >
                   Why HashMind ?
                 </Text>
@@ -108,6 +109,7 @@ function Footer() {
                           color="white"
                           ml="2rem"
                           mr="2rem"
+                          _hover={{ color: "#DDFF55" }}
                         >
                           About Us
                         </Text>
@@ -186,6 +188,7 @@ function Footer() {
                       bg="transparent"
                       mb="15px"
                       fontSize={{ base: "16px", md: "18px" }}
+                      _hover={{ color: "#DDFF55" }}
                     >
                       About Us
                     </Text>
@@ -195,6 +198,7 @@ function Footer() {
                       bg="transparent"
                       mb="15px"
                       fontSize={{ base: "16px", md: "18px" }}
+                      _hover={{ color: "#DDFF55" }}
                     >
                       Blog
                     </Text>
@@ -204,6 +208,7 @@ function Footer() {
                       bg="transparent"
                       mb="15px"
                       fontSize={{ base: "16px", md: "18px" }}
+                      _hover={{ color: "#DDFF55" }}
                     >
                       Our Heritages
                     </Text>
@@ -216,6 +221,7 @@ function Footer() {
                       bg="transparent"
                       mb="15px"
                       fontSize={{ base: "16px", md: "18px" }}
+                      _hover={{ color: "#DDFF55" }}
                     >
                       Documents
                     </Text>
@@ -225,6 +231,7 @@ function Footer() {
                       bg="transparent"
                       mb="15px"
                       fontSize={{ base: "16px", md: "18px" }}
+                      _hover={{ color: "#DDFF55" }}
                     >
                       Careers
                     </Text>
@@ -234,6 +241,7 @@ function Footer() {
                       bg="transparent"
                       mb="15px"
                       fontSize={{ base: "16px", md: "18px" }}
+                      _hover={{ color: "#DDFF55" }}
                     >
                       Privacy Policy
                     </Text>
@@ -317,6 +325,7 @@ function Footer() {
                         <Link
                           href={"https://twitter.com/Arjunweb3in"}
                           target="_blank"
+                          className="hoverEffect"
                         >
                           <BsTwitter
                             style={{
@@ -329,6 +338,7 @@ function Footer() {
                         <Link
                           href={"https://www.linkedin.com/in/arjungmn/"}
                           target="_blank"
+                          className="hoverEffect"
                         >
                           <BiLogoLinkedin
                             style={{
@@ -360,6 +370,7 @@ function Footer() {
                         <Link
                           href={"https://twitter.com/hashmindAI"}
                           target="_blank"
+                          className="hoverEffect"
                         >
                           <BsTwitter
                             style={{
@@ -372,6 +383,7 @@ function Footer() {
                         <Link
                           href={"https://www.linkedin.com/company/hashmind/"}
                           target="_blank"
+                          className="hoverEffect"
                         >
                           <BiLogoLinkedin
                             style={{
@@ -384,6 +396,7 @@ function Footer() {
                         <Link
                           href={"https://medium.com/@hashmindorg"}
                           target="blank"
+                          className="hoverEffect"
                         >
                           <BsMedium
                             style={{

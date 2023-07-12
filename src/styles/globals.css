@@ -83,14 +83,7 @@
 
 /* footer hover icons */
 
-.twittericon:hover {
-  color: #ddff55;
-}
 
-.linkedinicon:hover {
-  color: #ddff55;
-}
-
-.mediumicon:hover {
-  color: #ddff55;
+.hoverEffect:hover{
+color: #DDFF55;
 }
