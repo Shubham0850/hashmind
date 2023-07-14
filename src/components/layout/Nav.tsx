@@ -60,7 +60,7 @@ function NavBar() {
             Home
           </Link>
           <Link
-            href="#"
+            href={"#footer"}
             mr={4}
             _hover={{
               color: "#DDFF55",
@@ -71,7 +71,7 @@ function NavBar() {
             Our Thesis
           </Link>
           <Link
-            href="#"
+            href="https://medium.com/@hashmindorg"
             mr={4}
             _hover={{
               color: "#DDFF55",
@@ -82,7 +82,7 @@ function NavBar() {
             Blog
           </Link>
           <Link
-            href="#"
+            href={"#footer"}
             mr={4}
             _hover={{
               color: "#DDFF55",

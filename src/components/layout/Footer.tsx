@@ -37,7 +37,7 @@ function Footer() {
   const [linkExpend, setLinkExpend] = useState(false);
 
   return (
-    <Box background={"#080808"}>
+    <Box background={"#080808"} id="footer">
       <Container
         maxW={1300}
         background={"transparent"}
@@ -175,7 +175,7 @@ function Footer() {
                     About Us
                   </Text>
                 </Link>
-                <Link href={"#"}>
+                <Link href="https://medium.com/@hashmindorg">
                   <Text
                     bg="transparent"
                     mb="15px"
@@ -208,7 +208,7 @@ function Footer() {
                     Documents
                   </Text>
                 </Link>
-                <Link href={"#"}>
+                <Link href="https://forms.gle/fwr2AX5gB1MfWVtLA">
                   <Text
                     bg="transparent"
                     mb="15px"
@@ -218,7 +218,7 @@ function Footer() {
                     Careers
                   </Text>
                 </Link>
-                <Link href={"#"}>
+                {/* <Link href={"#"}>
                   <Text
                     bg="transparent"
                     mb="15px"
@@ -227,7 +227,7 @@ function Footer() {
                   >
                     Privacy Policy
                   </Text>
-                </Link>
+                </Link> */}
               </Box>
             </Box>
 
