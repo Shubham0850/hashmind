@@ -30,69 +30,68 @@ function NavBar() {
         color="white"
       >
         {/* Logo */}
-        <Flex gap={40}>
+
+        <Link
+          href="/"
+          fontSize="xl"
+          fontWeight="bold"
+          _hover={{ textDecoration: "none" }}
+        >
+          <Text fontSize={24} color={"#DDFF55"} fontWeight={600}>
+            #Mind
+          </Text>
+        </Link>
+
+        {/* Links */}
+        <Flex
+          gap={20}
+          display={{ base: "none", md: "flex" }}
+          alignItems="center"
+        >
           <Link
             href="/"
-            fontSize="xl"
-            fontWeight="bold"
-            _hover={{ textDecoration: "none" }}
+            mr={4}
+            _hover={{
+              color: "#DDFF55",
+              textDecoration: "underline",
+              fontWeight: "bold",
+            }}
           >
-            <Text fontSize={24} color={"#DDFF55"} fontWeight={600}>
-              #Mind
-            </Text>
+            Home
           </Link>
-
-          {/* Links */}
-          <Flex
-            gap={20}
-            display={{ base: "none", md: "flex" }}
-            alignItems="center"
+          <Link
+            href="#"
+            mr={4}
+            _hover={{
+              color: "#DDFF55",
+              textDecoration: "underline",
+              fontWeight: "bold",
+            }}
           >
-            <Link
-              href="/"
-              mr={4}
-              _hover={{
-                color: "#DDFF55",
-                textDecoration: "underline",
-                fontWeight: "bold",
-              }}
-            >
-              Home
-            </Link>
-            <Link
-              href="#"
-              mr={4}
-              _hover={{
-                color: "#DDFF55",
-                textDecoration: "underline",
-                fontWeight: "bold",
-              }}
-            >
-              Our Thesis
-            </Link>
-            <Link
-              href="#"
-              mr={4}
-              _hover={{
-                color: "#DDFF55",
-                textDecoration: "underline",
-                fontWeight: "bold",
-              }}
-            >
-              Blog
-            </Link>
-            <Link
-              href="#"
-              mr={4}
-              _hover={{
-                color: "#DDFF55",
-                textDecoration: "underline",
-                fontWeight: "bold",
-              }}
-            >
-              Contact
-            </Link>
-          </Flex>
+            Our Thesis
+          </Link>
+          <Link
+            href="#"
+            mr={4}
+            _hover={{
+              color: "#DDFF55",
+              textDecoration: "underline",
+              fontWeight: "bold",
+            }}
+          >
+            Blog
+          </Link>
+          <Link
+            href="#"
+            mr={4}
+            _hover={{
+              color: "#DDFF55",
+              textDecoration: "underline",
+              fontWeight: "bold",
+            }}
+          >
+            Contact
+          </Link>
         </Flex>
 
         {/* Menu Icon */}
@@ -113,11 +112,6 @@ function NavBar() {
             onClick={onToggle}
           />
         </Box>
-
-        {/* CTA */}
-        <Button bg="#DDFF55" _hover={{ background: "white" }} display={{base: "none", md: "block"}} color={"black"} size="lg">
-          Coming Soon
-        </Button>
       </Flex>
 
       <SliderNav isOpen={isOpen} onToggle={onToggle} />

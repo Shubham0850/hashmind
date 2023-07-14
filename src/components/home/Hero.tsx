@@ -51,6 +51,7 @@ function Hero() {
               display="flex"
               py={{ base: 6, md: 10 }}
               zIndex={10}
+              id="container"
             >
               <Text
                 fontSize={{ base: "30px", md: "40px" }}
@@ -61,14 +62,37 @@ function Hero() {
               >
                 Let’s
               </Text>
-              <Text
-                fontSize={{ base: "40px", md: "60px" }}
-                bg="rgba(0, 0, 0, 0)"
-                fontWeight={600}
-                color="#DDFF55"
-              >
-                Envision.
-              </Text>
+
+              <div id="flip">
+                <Text
+                  fontSize={{ base: "40px", md: "60px" }}
+                  bg="rgba(0, 0, 0, 0)"
+                  fontWeight={600}
+                  color="#DDFF55"
+                  className="line"
+                >
+                  Envision.
+                </Text>
+
+                <Text
+                  fontSize={{ base: "40px", md: "60px" }}
+                  bg="rgba(0, 0, 0, 0)"
+                  fontWeight={600}
+                  color="#DDFF55"
+                  className="line"
+                >
+                  Engage.
+                </Text>
+                <Text
+                  fontSize={{ base: "40px", md: "60px" }}
+                  bg="rgba(0, 0, 0, 0)"
+                  fontWeight={600}
+                  color="#DDFF55"
+                  className="line"
+                >
+                  Evolve.
+                </Text>
+              </div>
             </Box>
 
             <Link href={"https://forms.gle/beQ3jmeJgsinncJT7"} target="_blank">
@@ -93,7 +117,14 @@ function Hero() {
             display={{ base: "block", md: "none" }}
           />
 
-          <Box position={"absolute"} bottom={0} left={0} px={8} py={20} bg="transparent">
+          <Box
+            position={"absolute"}
+            bottom={0}
+            left={0}
+            px={8}
+            py={20}
+            bg="transparent"
+          >
             <Text
               fontWeight={500}
               bg="rgba(0, 0, 0, 0)"
@@ -180,92 +211,3 @@ function Hero() {
 }
 
 export default Hero;
-
-{
-  /* <Box position="relative" className="hero">
-
-<Box
-  position="absolute"
-  bg="transparent"
-  left={0}
-  padding={{ base: "80px 0 0 20px", md: "100px 0 0 80px" }}
-  bottom={{ base: 20, md: "none" }}
->
-  <Text
-    fontWeight={500}
-    bg="rgba(0, 0, 0, 0)"
-    fontSize={{ base: "30px", md: "60px" }}
-    width={isMobile ? "100%" : "626px"}
-    color="#DDFF55"
-  >
-    Convergence of Web3 & AI{" "}
-    <b style={{ background: "transparent", color: "white" }}>
-      Venture Studio
-    </b>
-  </Text>
-
-  <Box
-    bg="rgba(0, 0, 0, 0)"
-    display="flex"
-    py={{ base: 6, md: 10 }}
-    zIndex={10}
-  >
-    <Text
-      fontSize={{ base: "30px", md: "40px" }}
-      bg="rgba(0, 0, 0, 0)"
-      fontWeight={600}
-      color="white"
-      p={4}
-    >
-      Let’s
-    </Text>
-    <Text
-      fontSize={{ base: "40px", md: "60px" }}
-      bg="rgba(0, 0, 0, 0)"
-      fontWeight={600}
-      color="#DDFF55"
-    >
-      Envision.
-    </Text>
-  </Box>
-
-  <Button
-    background="#DDFF55"
-    _hover={{ background: "white" }}
-    size="lg"
-  >
-    Build With Us
-  </Button>
-</Box>
-</Box>
-
-<Link href="#aboutUs">
-<IconButton
-  boxShadow="box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
--webkit-box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);
--moz-box-shadow: 0px 0px 12px 0px rgba(251,251,251,0.75);"
-  ml={1}
-  w="60px"
-  h="60px"
-  icon={
-    <BsArrowDown
-      className="blink"
-      style={{
-        background: "transparent",
-        color: "black",
-        fontSize: 22,
-      }}
-    />
-  }
-  aria-label="User Profile"
-  variant="ghost"
-  size="md"
-  background={"white"}
-  rounded={"full"}
-  position={"absolute"}
-  bottom={"-30px"}
-  left={"calc(50% - 30px)"}
-  zIndex={10}
-/>
-</Link> */
-}
