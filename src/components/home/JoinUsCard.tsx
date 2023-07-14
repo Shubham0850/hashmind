@@ -1,8 +1,19 @@
-import { Box, Button, Container, Heading, Text, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Text,
+  Stack,
+  Link,
+} from "@chakra-ui/react";
 
 const Card = () => {
   return (
-    <Container maxW={1300} padding={{ base: "100px 25px", md: "100px 25px 150px 25px" }}>
+    <Container
+      maxW={1300}
+      padding={{ base: "100px 25px", md: "100px 25px 150px 25px" }}
+    >
       <Box
         width="100%"
         bg="white"
@@ -15,7 +26,12 @@ const Card = () => {
         alignItems={{ base: "initial", md: "center" }}
         justifyContent={{ base: "initial", md: "space-between" }}
       >
-        <Stack spacing={{ base: 4, md: 8 }} pr={{ base: 0, md: 4 }} bg="transparent" mb={{base: "50px", md: "0px"}}>
+        <Stack
+          spacing={{ base: 4, md: 8 }}
+          pr={{ base: 0, md: 4 }}
+          bg="transparent"
+          mb={{ base: "50px", md: "0px" }}
+        >
           <Heading
             as="h2"
             size="lg"
@@ -29,23 +45,30 @@ const Card = () => {
             Build <br />
             With Us.
           </Heading>
-          <Text color="#414141" bg={"transparent"} fontWeight={400} fontSize={{ base: "18px", md: "24px" }}>
+          <Text
+            color="#414141"
+            bg={"transparent"}
+            fontWeight={400}
+            fontSize={{ base: "18px", md: "24px" }}
+          >
             Join us as a partner, builder, or community in our creative journey.
           </Text>
         </Stack>
-        <Button
-          p={{ base: "10px 20px", md: "12px 40px" }}
-          fontSize={{ base: "14px", md: "18px" }}
-          fontWeight={600}
-          background={"#DDFF55"}
-          size={"md"}
-          rounded={"full"}
-          color={"#000"}
-          alignSelf={{ base: "flex-start", md: "center" }}
-          _hover={{color:'white',background:'black'}}
-        >
-          Join Us Now
-        </Button>
+        <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
+          <Button
+            p={{ base: "10px 20px", md: "12px 40px" }}
+            fontSize={{ base: "14px", md: "18px" }}
+            fontWeight={600}
+            background={"#DDFF55"}
+            size={"md"}
+            rounded={"full"}
+            color={"#000"}
+            alignSelf={{ base: "flex-start", md: "center" }}
+            _hover={{ color: "white", background: "black" }}
+          >
+            Join Us Now
+          </Button>
+        </Link>
       </Box>
     </Container>
   );

@@ -73,7 +73,7 @@ function Hero() {
               </Text>
             </Box>
 
-            <Link href={"https://forms.gle/beQ3jmeJgsinncJT7"} target="_blank">
+            <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
               <Button
                 background="#DDFF55"
                 _hover={{ background: "white" }}
@@ -142,7 +142,7 @@ function Hero() {
               </Text>
             </Box>
 
-            <Link href={"https://forms.gle/beQ3jmeJgsinncJT7"} target="_blank">
+            <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
               <Button
                 background="#DDFF55"
                 _hover={{ background: "white" }}

@@ -88,7 +88,7 @@ function Footer() {
                   About Us
                 </Text>
               </Link>
-              <Link href={"#"}>
+              <Link href={"https://medium.com/@hashmindorg"}>
                 <Text
                   bg="transparent"
                   mb="15px"
@@ -118,7 +118,7 @@ function Footer() {
                   Documents
                 </Text>
               </Link>
-              <Link href={"#"}>
+              <Link href={"https://forms.gle/fwr2AX5gB1MfWVtLA"}>
                 <Text
                   bg="transparent"
                   mb="15px"
