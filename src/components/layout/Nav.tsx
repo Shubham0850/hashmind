@@ -5,12 +5,9 @@ import {
   IconButton,
   Link,
   Text,
-  useDisclosure,
   Button,
 } from "@chakra-ui/react";
-import { FiSearch, FiMenu } from "react-icons/fi";
-import { BiUser } from "react-icons/bi";
-import { AiOutlineBulb } from "react-icons/ai";
+import { FiMenu } from "react-icons/fi";
 import SliderNav from "./SliderNav";
 import { useState } from "react";
 
@@ -35,7 +32,12 @@ function NavBar() {
       >
         {/* Logo */}
         <Flex gap={40}>
-          <Link href="/" fontSize="xl" fontWeight="bold">
+          <Link
+            href="/"
+            fontSize="xl"
+            fontWeight="bold"
+            _hover={{ textDecoration: "none" }}
+          >
             <Text fontSize={24} color={"#DDFF55"} fontWeight={600}>
               #Mind
             </Text>
