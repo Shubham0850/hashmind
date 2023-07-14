@@ -51,7 +51,6 @@ function Hero() {
               display="flex"
               py={{ base: 6, md: 10 }}
               zIndex={10}
-              id="container"
             >
               <Text
                 fontSize={{ base: "30px", md: "40px" }}
@@ -63,17 +62,15 @@ function Hero() {
                 Let’s
               </Text>
 
-              <div id="flip">
-                <Text
-                  fontSize={{ base: "40px", md: "60px" }}
-                  bg="rgba(0, 0, 0, 0)"
-                  fontWeight={600}
-                  color="#DDFF55"
-                  className="line"
-                >
-                  Envision.
-                </Text>
-              </div>
+              <Text
+                fontSize={{ base: "40px", md: "60px" }}
+                bg="rgba(0, 0, 0, 0)"
+                fontWeight={600}
+                color="#DDFF55"
+                className="line"
+              >
+                Envision.
+              </Text>
             </Box>
 
             <Link href={"https://forms.gle/beQ3jmeJgsinncJT7"} target="_blank">
