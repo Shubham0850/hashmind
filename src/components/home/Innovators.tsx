@@ -73,7 +73,7 @@ function NurturingInnovators() {
         >
           <Box>
             <Card
-              imgSrc={"/research-driven.png"}
+              imgSrc={"/Research Driven.gif"}
               title={"Research Driven"}
               description={
                 "Revolutionising Web3 Consumer Experiences with AI at the Core with Expertise"
@@ -81,7 +81,7 @@ function NurturingInnovators() {
             />
             <Box mt={{ base: "50px", md: "120px" }} />
             <Card
-              imgSrc={"/advice.png"}
+              imgSrc={"/Advice.gif"}
               title={"Advice"}
               description={
                 "Our experienced advisors offer guidance in product, GTM, community, and scale to empower our portfolio founders."
@@ -91,7 +91,7 @@ function NurturingInnovators() {
 
           <Box pt={{ base: "0px", md: "150px" }}>
             <Card
-              imgSrc={"/build.png"}
+              imgSrc={"/build.gif"}
               title={"Build"}
               description={
                 "Empowering Projects, Unleashing Web3  Consumer Applications with Our Expertise and Ingenuity"
@@ -99,7 +99,7 @@ function NurturingInnovators() {
             />
             <Box mt={{ base: "50px", md: "120px" }} />
             <Card
-              imgSrc={"/alliance.png"}
+              imgSrc={"/Alliance.gif"}
               title={"Alliance"}
               description={
                 "Forging network of Partnerships to Redefine the Web3 and AI Landscape"
@@ -109,7 +109,7 @@ function NurturingInnovators() {
 
           <Box pt={{ base: "0px", md: "300px" }}>
             <Card
-              imgSrc={"/growth.png"}
+              imgSrc={"/growth.gif"}
               title={"Growth"}
               description={
                 "We bring proven strategies for early stage companies to get traction and branding"
@@ -117,7 +117,7 @@ function NurturingInnovators() {
             />
             <Box mt={{ base: "50px", md: "120px" }} />
             <Card
-              imgSrc={"/fund.png"}
+              imgSrc={"/Fund.gif"}
               title={"Fund"}
               description={
                 "We invest in promising founders by deploying our capital and support fundraise by our partnership potential investors"

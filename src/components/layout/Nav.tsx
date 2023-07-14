@@ -26,7 +26,6 @@ function NavBar() {
         justify="space-between"
         wrap="wrap"
         py={4}
-        px={10}
         bg="transparent"
         color="white"
       >
@@ -116,7 +115,7 @@ function NavBar() {
         </Box>
 
         {/* CTA */}
-        <Button bg="#DDFF55" _hover={{ background: "white" }} size="lg">
+        <Button bg="#DDFF55" _hover={{ background: "white" }} display={{base: "none", md: "block"}} color={"black"} size="lg">
           Coming Soon
         </Button>
       </Flex>
