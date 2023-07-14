@@ -73,25 +73,6 @@ function Hero() {
                 >
                   Envision.
                 </Text>
-
-                <Text
-                  fontSize={{ base: "40px", md: "60px" }}
-                  bg="rgba(0, 0, 0, 0)"
-                  fontWeight={600}
-                  color="#DDFF55"
-                  className="line"
-                >
-                  Engage.
-                </Text>
-                <Text
-                  fontSize={{ base: "40px", md: "60px" }}
-                  bg="rgba(0, 0, 0, 0)"
-                  fontWeight={600}
-                  color="#DDFF55"
-                  className="line"
-                >
-                  Evolve.
-                </Text>
               </div>
             </Box>
 
