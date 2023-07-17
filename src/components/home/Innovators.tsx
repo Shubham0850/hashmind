@@ -54,7 +54,7 @@ function NurturingInnovators() {
   return (
     <Container maxW={1300} py={"50px"}>
       <Box bg="transparent">
-        <Heading
+        {/* <Heading
           textAlign="center"
           mb={{ base: "55px", md: "110px" }}
           fontSize={{ base: "27px", md: "50px" }}
@@ -62,8 +62,28 @@ function NurturingInnovators() {
           textColor="white"
         >
           Nurturing{" "}
-          <b style={{ color: "#DDFF55", fontWeight: "600" }}>Innovators</b>
-        </Heading>
+        </Heading> */}
+
+        <Box
+          overflow={"hidden"}
+          height={{base: "45px", md: "70px"}}
+          mb={{ base: "55px", md: "110px" }}
+        >
+          <div className="words">
+            <span className="animated-text-2">
+              Nutruring{" "}
+              <b style={{ color: "#DDFF55", fontWeight: "600" }}>Innovators</b>
+            </span>
+            <span className="animated-text-2">
+              Evolving{" "}
+              <b style={{ color: "#DDFF55", fontWeight: "600" }}>Porjects</b>
+            </span>
+            <span className="animated-text-2">
+              Thriving{" "}
+              <b style={{ color: "#DDFF55", fontWeight: "600" }}>Consumers</b>
+            </span>
+          </div>
+        </Box>
 
         <Flex
           justifyContent="center"

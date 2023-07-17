@@ -88,3 +88,67 @@
 }
 
 /* Text Rolling Animation */
+.words {
+  overflow: hidden;
+  background-color: transparent;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.animated-text {
+  display: block;
+  animation: spin_words 5s infinite;
+  margin-top: -5px;
+
+  font-size: 60px;
+  color: #ddff55;
+  text-align: left;
+  font-weight: 600;
+  background-color: transparent;
+}
+.words-small {
+  overflow: hidden;
+  background-color: transparent;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.animated-text-small {
+  display: block;
+  animation: spin_words 5s infinite;
+  text-align: center;
+  margin-top: -5px;
+
+  font-size: 40px;
+  color: #ddff55;
+  font-weight: 600;
+  background-color: transparent;
+}
+.animated-text-2 {
+  display: block;
+  animation: spin_words 5s infinite;
+  text-align: center;
+  margin-top: -5px;
+
+  font-size: 50px;
+  font-weight: 600;
+  background-color: transparent;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+@keyframes spin_words {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}

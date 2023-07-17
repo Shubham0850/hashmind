@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Container,
+  Flex,
   IconButton,
   Image,
   Text,
@@ -52,25 +53,28 @@ function Hero() {
               py={{ base: 6, md: 10 }}
               zIndex={10}
             >
-              <Text
-                fontSize={{ base: "30px", md: "40px" }}
-                bg="rgba(0, 0, 0, 0)"
-                fontWeight={600}
-                color="white"
-                p={4}
-              >
-                Let’s
-              </Text>
-
-              <Text
-                fontSize={{ base: "40px", md: "60px" }}
-                bg="rgba(0, 0, 0, 0)"
-                fontWeight={600}
-                color="#DDFF55"
-                className="line"
-              >
-                Envision.
-              </Text>
+              <Flex alignItems={"center"} bg={"transparent"}>
+                <Text
+                  fontSize={{ base: "30px", md: "40px" }}
+                  bg="rgba(0, 0, 0, 0)"
+                  fontWeight={600}
+                  color="white"
+                  p={4}
+                >
+                  Let’s
+                </Text>
+                <Box
+                  height={"80px"}
+                  overflow={"hidden"}
+                  bg={"transparent"}
+                >
+                  <div className="words">
+                    <span className="animated-text">Envision.</span>
+                    <span className="animated-text">Engage.</span>
+                    <span className="animated-text">Evolve.</span>
+                  </div>
+                </Box>
+              </Flex>
             </Box>
 
             <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
@@ -123,23 +127,22 @@ function Hero() {
               py={{ base: 6, md: 10 }}
               zIndex={10}
             >
-              <Text
-                fontSize={{ base: "30px", md: "40px" }}
-                bg="rgba(0, 0, 0, 0)"
-                fontWeight={600}
-                color="white"
-                p={4}
-              >
-                Let’s
-              </Text>
-              <Text
-                fontSize={{ base: "40px", md: "60px" }}
-                bg="rgba(0, 0, 0, 0)"
-                fontWeight={600}
-                color="#DDFF55"
-              >
-                Envision.
-              </Text>
+              <Flex alignItems={"center"} bg={"transparent"}>
+                <Text
+                  fontSize={{ base: "30px", md: "40px" }}
+                  bg="rgba(0, 0, 0, 0)"
+                  fontWeight={600}
+                  color="white"
+                  pr={4}
+                >
+                  Let’s
+                </Text>
+                <div className="words-small">
+                  <span className="animated-text-small">Envision.</span>
+                  <span className="animated-text-small">Engage.</span>
+                  <span className="animated-text-small">Evolve.</span>
+                </div>
+              </Flex>
             </Box>
 
             <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
