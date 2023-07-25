@@ -28,7 +28,8 @@ function OurHeritage() {
 
         <Grid
           templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
-          gap={4}
+          gap={8}
+          py={"50px"}
         >
           <Flex
             borderRight={{ base: "none", md: "1px solid #df5" }}
@@ -37,7 +38,7 @@ function OurHeritage() {
             justifyContent="center"
             alignItems="center"
           >
-            <Box py={{ base: "20px", md: "50px" }}>
+            <Box py={{ base: "20px", md: "0" }}>
               <Image
                 width={60}
                 height={60}
@@ -68,7 +69,7 @@ function OurHeritage() {
             justifyContent="center"
             alignItems="center"
           >
-            <Box py={{ base: "20px", md: "50px" }}>
+            <Box py={{ base: "20px", md: "0" }}>
               <Image
                 width={60}
                 height={60}
@@ -98,7 +99,7 @@ function OurHeritage() {
             justifyContent="center"
             alignItems="center"
           >
-            <Box py={{ base: "20px", md: "50px" }}>
+            <Box py={{ base: "20px", md: "0" }}>
               <Image
                 width={60}
                 height={60}
@@ -122,7 +123,7 @@ function OurHeritage() {
           </Flex>
 
           <Flex pr={4} justifyContent="center" alignItems="center">
-            <Box py={{ base: "20px", md: "50px" }}>
+            <Box py={{ base: "20px", md: "0" }}>
               <Image
                 width={60}
                 height={60}

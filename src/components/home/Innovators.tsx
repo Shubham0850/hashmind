@@ -2,8 +2,6 @@ import {
   Box,
   Container,
   Flex,
-  Heading,
-  Spacer,
   Text,
   Image,
 } from "@chakra-ui/react";
@@ -54,16 +52,6 @@ function NurturingInnovators() {
   return (
     <Container maxW={1300} py={"50px"}>
       <Box bg="transparent">
-        {/* <Heading
-          textAlign="center"
-          mb={{ base: "55px", md: "110px" }}
-          fontSize={{ base: "27px", md: "50px" }}
-          fontWeight={"600"}
-          textColor="white"
-        >
-          Nurturing{" "}
-        </Heading> */}
-
         <Box
           overflow={"hidden"}
           height={{ base: "45px", md: "70px" }}
@@ -71,15 +59,15 @@ function NurturingInnovators() {
         >
           <div className="words">
             <span className="animated-text-2">
-              Nutruring{" "}
-              <b style={{ color: "#DDFF55", fontWeight: "600" }}>Innovators</b>
+              <b style={{ color: "#fff" }}>Nutruring</b>{" "}
+              <b style={{ color: "#DDFF55", fontWeight: "600" }}>Inovators</b>
             </span>
             <span className="animated-text-2">
-              Evolving{" "}
-              <b style={{ color: "#DDFF55", fontWeight: "600" }}>Porjects</b>
+              <b style={{ color: "#fff" }}>Evolving</b>{" "}
+              <b style={{ color: "#DDFF55", fontWeight: "600" }}>Projects</b>
             </span>
             <span className="animated-text-2">
-              Thriving{" "}
+              <b style={{ color: "#fff" }}>Thriving</b>{" "}
               <b style={{ color: "#DDFF55", fontWeight: "600" }}>Consumers</b>
             </span>
           </div>
