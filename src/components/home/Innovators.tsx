@@ -102,7 +102,7 @@ function NurturingInnovators() {
               imgSrc={"/build.gif"}
               title={"Co-Build"}
               description={
-                "Empowering Projects, Unleashing Web3  Consumer Applications with Our Expertise and Ingenuity"
+                "Ignite the mass adoption of consumer web3 projects with ai convergence . Contribute as a HashMind partner, co-create the future of innovation."
               }
             />
             <Box mt={{ base: "50px", md: "120px" }} />
@@ -126,7 +126,7 @@ function NurturingInnovators() {
             <Box mt={{ base: "50px", md: "120px" }} />
             <Card
               imgSrc={"/Fund.gif"}
-              title={"Fund"}
+              title={"Co Fund"}
               description={
                 "We invest in promising founders by deploying our capital and support fundraise by our partnership potential investors"
               }

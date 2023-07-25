@@ -77,7 +77,7 @@ function Hero() {
               </Flex>
             </Box>
 
-            <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
+            <Link href={"https://forms.gle/NQowYRdzhrMEYJLb7"} target="_blank">
               <Button
                 background="#DDFF55"
                 _hover={{ background: "white" }}

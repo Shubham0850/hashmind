@@ -54,7 +54,7 @@ const Card = () => {
             Join us as a partner, builder, or community in our creative journey.
           </Text>
         </Stack>
-        <Link href={"https://hashmind.gitbook.io/about/"} target="_blank">
+        <Link href={"https://forms.gle/NQowYRdzhrMEYJLb7"} target="_blank">
           <Button
             p={{ base: "10px 20px", md: "12px 40px" }}
             fontSize={{ base: "14px", md: "18px" }}
