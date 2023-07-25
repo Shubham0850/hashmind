@@ -22,6 +22,28 @@ function WhoWeAre() {
           p={10}
           color={"#FFF"}
         >
+          Elevating Consumer Experiences through AI and Web3 Intersect
+        </Text>
+
+        <Text
+          fontSize={{ base: "18px", md: "24px" }}
+          fontWeight={400}
+          textAlign="center"
+          p={10}
+          color={"#FFF"}
+        >
+          About Brand: Our studio Enabling Web3 Consumer layer with Ai through
+          the collaboration of our open experts, empowering founders and
+          delivering exceptional projects to delight consumers.
+        </Text>
+
+        <Text
+          fontSize={{ base: "18px", md: "24px" }}
+          fontWeight={400}
+          textAlign="center"
+          p={10}
+          color={"#FFF"}
+        >
           We are fueling the dreams of pioneers and captivating the hearts of
           consumers. Our venture studio embarks on a transformative journey{" "}
           <span style={{ color: "#DDFF55" }}>
@@ -39,10 +61,15 @@ function WhoWeAre() {
               display={"flex"}
               alignItems="center"
               p={5}
-              _hover={{fontWeight:'bold',color:'#DDFF55'}}
+              _hover={{ fontWeight: "bold", color: "#DDFF55" }}
             >
               Know More
-              <Icon className="blink" as={BsArrowRight} color={"#DDFF55"} m={2} />
+              <Icon
+                className="blink"
+                as={BsArrowRight}
+                color={"#DDFF55"}
+                m={2}
+              />
             </Text>
           </Link>
         </VStack>

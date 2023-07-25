@@ -26,110 +26,126 @@ function OurHeritage() {
           </Text>
         </Box>
 
-      
-          <Grid
-            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
-            gap={4}
+        <Grid
+          templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
+          gap={4}
+        >
+          <Flex
+            borderRight={{ base: "none", md: "1px solid #df5" }}
+            borderBottom={{ base: "1px solid #df5", md: "none" }}
+            pr={4}
+            justifyContent="center"
+            alignItems="center"
           >
-            <Flex
-              borderRight={{ base: "none", md: "1px solid #df5" }}
-              borderBottom={{ base: "1px solid #df5", md: "none" }}
-              pr={4}
-              justifyContent="center"
-              alignItems="center"
-            >
-              <Box py={{ base: "20px", md: "50px" }}>
-                <Image
-                  width={60}
-                  height={60}
-                  src="/thumb-icon.svg"
-                  alt="thumb icon"
-                />
-                <Text
-                  mt={{ base: "12px", md: "22px" }}
-                  fontSize={"24px"}
-                  fontWeight={600}
-                  color="white"
-                >
-                  We pioneer
-                  <br /> convergence
-                </Text>
-              </Box>
-            </Flex>
+            <Box py={{ base: "20px", md: "50px" }}>
+              <Image
+                width={60}
+                height={60}
+                src="/thumb-icon.svg"
+                alt="thumb icon"
+              />
+              <Text
+                mt={{ base: "12px", md: "22px" }}
+                fontSize={"24px"}
+                fontWeight={600}
+                color="white"
+              >
+                We pioneer
+                <br /> convergence
+              </Text>
 
-            <Flex
-              borderRight={{ base: "none", md: "1px solid #df5" }}
-              borderBottom={{ base: "1px solid #df5", md: "none" }}
-              pr={4}
-              justifyContent="center"
-              alignItems="center"
-            >
-              <Box py={{ base: "20px", md: "50px" }}>
-                <Image
-                  width={60}
-                  height={60}
-                  src="/idea-icon.svg"
-                  alt="Idea icon"
-                />
-                <Text
-                  mt={{ base: "12px", md: "22px" }}
-                  fontSize={"24px"}
-                  fontWeight={600}
-                  color="white"
-                >
-                  We redefine <br />
-                  possibilities
-                </Text>
-              </Box>
-            </Flex>
+              <Text color="white" mt="8">
+                We seamlessly intersect ai and web3, creating unlimited
+                possibilities for consumer applications.
+              </Text>
+            </Box>
+          </Flex>
 
-            <Flex
-              borderRight={{ base: "none", md: "1px solid #df5" }}
-              borderBottom={{ base: "1px solid #df5", md: "none" }}
-              pr={4}
-              justifyContent="center"
-              alignItems="center"
-            >
-              <Box py={{ base: "20px", md: "50px" }}>
-                <Image
-                  width={60}
-                  height={60}
-                  src="/coding-icon.svg"
-                  alt="coding icon"
-                />
-                <Text
-                  mt={{ base: "12px", md: "22px" }}
-                  fontSize={"24px"}
-                  fontWeight={600}
-                  color="white"
-                >
-                  We build
-                  <br /> for Demand
-                </Text>
-              </Box>
-            </Flex>
+          <Flex
+            borderRight={{ base: "none", md: "1px solid #df5" }}
+            borderBottom={{ base: "1px solid #df5", md: "none" }}
+            pr={4}
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Box py={{ base: "20px", md: "50px" }}>
+              <Image
+                width={60}
+                height={60}
+                src="/idea-icon.svg"
+                alt="Idea icon"
+              />
+              <Text
+                mt={{ base: "12px", md: "22px" }}
+                fontSize={"24px"}
+                fontWeight={600}
+                color="white"
+              >
+                We redefine <br />
+                possibilities
+              </Text>
+              <Text color="white" mt="8">
+                We challenge norms, break boundaries, and unveil new dimensions
+                of innovation.
+              </Text>
+            </Box>
+          </Flex>
 
-            <Flex pr={4} justifyContent="center" alignItems="center">
-              <Box py={{ base: "20px", md: "50px" }}>
-                <Image
-                  width={60}
-                  height={60}
-                  src="/globe-icon.svg"
-                  alt="globe icon"
-                />
-                <Text
-                  mt={{ base: "12px", md: "22px" }}
-                  fontSize={"24px"}
-                  fontWeight={600}
-                  color="white"
-                >
-                  Societal impact
-                  <br /> is the goal
-                </Text>
-              </Box>
-            </Flex>
-          </Grid>
-        
+          <Flex
+            borderRight={{ base: "none", md: "1px solid #df5" }}
+            borderBottom={{ base: "1px solid #df5", md: "none" }}
+            pr={4}
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Box py={{ base: "20px", md: "50px" }}>
+              <Image
+                width={60}
+                height={60}
+                src="/coding-icon.svg"
+                alt="coding icon"
+              />
+              <Text
+                mt={{ base: "12px", md: "22px" }}
+                fontSize={"24px"}
+                fontWeight={600}
+                color="white"
+              >
+                We build
+                <br /> for Demand
+              </Text>
+              <Text color="white" mt="8">
+                Creating applications that meet market needs drives user
+                adoption and utilisation.
+              </Text>
+            </Box>
+          </Flex>
+
+          <Flex pr={4} justifyContent="center" alignItems="center">
+            <Box py={{ base: "20px", md: "50px" }}>
+              <Image
+                width={60}
+                height={60}
+                src="/globe-icon.svg"
+                alt="globe icon"
+              />
+              <Text
+                mt={{ base: "12px", md: "22px" }}
+                fontSize={"24px"}
+                fontWeight={600}
+                color="white"
+              >
+                Societal impact
+                <br /> is the goal
+              </Text>
+
+              <Text color="white" mt="8">
+                End user adoption drives real-world change by improving lives
+                and addressing challenges.
+              </Text>
+            </Box>
+          </Flex>
+        </Grid>
       </Box>
     </Container>
   );

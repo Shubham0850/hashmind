@@ -49,17 +49,6 @@ function NavBar() {
           alignItems="center"
         >
           <Link
-            href="/"
-            mr={4}
-            _hover={{
-              color: "#DDFF55",
-              textDecoration: "underline",
-              fontWeight: "bold",
-            }}
-          >
-            Home
-          </Link>
-          <Link
             href={"#footer"}
             mr={4}
             _hover={{

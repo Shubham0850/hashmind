@@ -66,7 +66,7 @@ function NurturingInnovators() {
 
         <Box
           overflow={"hidden"}
-          height={{base: "45px", md: "70px"}}
+          height={{ base: "45px", md: "70px" }}
           mb={{ base: "55px", md: "110px" }}
         >
           <div className="words">
@@ -112,7 +112,7 @@ function NurturingInnovators() {
           <Box pt={{ base: "0px", md: "150px" }}>
             <Card
               imgSrc={"/build.gif"}
-              title={"Build"}
+              title={"Co-Build"}
               description={
                 "Empowering Projects, Unleashing Web3  Consumer Applications with Our Expertise and Ingenuity"
               }
