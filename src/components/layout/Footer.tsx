@@ -12,15 +12,20 @@ import {
   AccordionPanel,
   extendTheme,
   ChakraProvider,
+  useToast,
+  Stack,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { useState } from "react";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BsMedium, BsTwitter } from "react-icons/bs";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import Airtable from "airtable";
 
 // Extend the Chakra UI theme to override default styles
 const theme = extendTheme({
+ 
+
   styles: {
     global: {
       ".chakra-accordion__item:first-of-type": {
@@ -33,8 +38,51 @@ const theme = extendTheme({
   },
 });
 
+const base = new Airtable({ apiKey: "keyT7waQdN55Lyrqo" }).base(
+  "apphRAwJCV9ZEHULO"
+);
+
 function Footer() {
   const [linkExpend, setLinkExpend] = useState(false);
+
+  const [email, setEmail] = useState("");
+  const toast = useToast();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      await base("Subscribers").create([{ fields: { Email: email } }]);
+      toast({
+        render: () => (
+          <Box
+            p={3}
+            bg="transparent"
+            border="2px solid green"
+            borderRadius="md"
+            color="green.500"
+            fontWeight={600}
+            textAlign="center"
+          >
+            <Text fontSize="lg">Success!</Text>
+            <Text>You have successfully subscribed.</Text>
+          </Box>
+        ),
+        status: "success",
+        duration: 3000,
+        isClosable: true,
+      });
+      setEmail("");
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        status: "error",
+        duration: 3000,
+        isClosable: true,
+      });
+    }
+  };
 
   return (
     <Box background={"#080808"} id="footer">
@@ -246,41 +294,52 @@ function Footer() {
               >
                 Subscribe to our newsletter!
               </Text>
-              <Flex
-                align={{ base: "center", md: "initial" }}
-                justify="center"
-                gap={5}
-                mb={{ base: "30px", md: "80px" }}
-                bg={"transparent"}
-                border="2px solid #DDFF55"
-                p={4}
-                rounded={"10px"}
+
+              <form
+                style={{ background: "transparent" }}
+                onSubmit={handleSubmit}
               >
-                <Input
-                  placeholder="Enter your email"
-                  font-size="16px"
-                  font-weight="400"
-                  bg="transparent"
-                  fontSize={{ base: "16px", md: "20px" }}
-                  px="10px"
-                  py="8px"
-                  outline="none"
-                  border="none"
-                  _placeholder={{ color: "#7D7D7D" }}
-                  boxShadow="none !important"
-                />
-                <Button
-                  px={{ base: "40px", md: "40px" }}
-                  py={{ base: "10px", md: "12px" }}
-                  fontSize={{ base: "14px", md: "18px" }}
-                  fontWeight={400}
-                  background="#DDFF55"
-                  rounded="full"
-                  color="#000000"
+                <Stack
+                  direction={{ base: "row", md: "row" }}
+                  mb={{ base: "30px", md: "80px" }}
+                  bg={"transparent"}
+                  border="2px solid #DDFF55"
+                  rounded={"10px"}
+                  justify="center"
+                  gap={5}
+                  p={4}
+                  align={{ base: "center", md: "initial" }}
                 >
-                  Subscribe
-                </Button>
-              </Flex>
+                  <Input
+                    placeholder="Enter your email"
+                    bg={"transparent"}
+                    font-weight="400"
+                    fontSize={{ base: "16px", md: "20px" }}
+                    px={{ base: "8px", md: "10px" }}
+                    py={{ base: "8px", md: "12px" }}
+                    type="email"
+                    value={email}
+                    outline="none"
+                    border="none"
+                    _placeholder={{ color: "#7D7D7D" }}
+                    boxShadow="none !important"
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                  <Button
+                    px={{ base: "30px", md: "40px" }}
+                    py={{ base: "10px", md: "12px" }}
+                    fontSize={{ base: "14px", md: "18px" }}
+                    fontWeight={400}
+                    background="#DDFF55"
+                    rounded="full"
+                    color="#000000"
+                    type="submit"
+                  >
+                    Subscribe
+                  </Button>
+                </Stack>
+              </form>
 
               <Flex
                 direction={{ base: "column", md: "row" }}
