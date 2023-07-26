@@ -24,8 +24,6 @@ import Airtable from "airtable";
 
 // Extend the Chakra UI theme to override default styles
 const theme = extendTheme({
- 
-
   styles: {
     global: {
       ".chakra-accordion__item:first-of-type": {
@@ -38,17 +36,22 @@ const theme = extendTheme({
   },
 });
 
-const base = new Airtable({ apiKey: "keyT7waQdN55Lyrqo" }).base(
-  "apphRAwJCV9ZEHULO"
+const apiId = process.env.NEXT_PUBLIC_API_BASE_ID;
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
+const base = new Airtable({ apiKey }).base(
+  apiId as string
 );
 
 function Footer() {
   const [linkExpend, setLinkExpend] = useState(false);
 
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
   const toast = useToast();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    setLoading(true);
     e.preventDefault();
 
     try {
@@ -73,6 +76,7 @@ function Footer() {
         isClosable: true,
       });
       setEmail("");
+      setLoading(false);
     } catch (error) {
       toast({
         title: "Error",
@@ -81,6 +85,7 @@ function Footer() {
         duration: 3000,
         isClosable: true,
       });
+      setLoading(false);
     }
   };
 
@@ -336,7 +341,7 @@ function Footer() {
                     color="#000000"
                     type="submit"
                   >
-                    Subscribe
+                    {loading ? "Submitting..." : "Subscribe"}
                   </Button>
                 </Stack>
               </form>
